@@ -1,0 +1,38 @@
+{
+  "name": "hobunsha-map",
+  "version": "0.9.0",
+  "description": "The MAP for visit the real-life locations of Hobunsha-anime-works",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "gulp server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hirosaji/hobunsha-map.git"
+  },
+  "keywords": [
+    "hobunsha",
+    "MAP",
+    "leaflet.js",
+    "D3.js"
+  ],
+  "author": "Hirosaji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hirosaji/hobunsha-map/issues"
+  },
+  "homepage": "https://github.com/Hirosaji/hobunsha-map#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.1.0",
+    "tar": ">=4.4.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "lodash": ">=4.17.19",
+    "lodash.mergewith": ">=4.6.2",
+    "fstream": ">=1.0.12",
+    "axios": ">=0.18.1"
+  }
+}
