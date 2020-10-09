@@ -4,7 +4,7 @@ My portfolio as illustrator work
 
 ## Content Page
 
-<a href=""><img src="./public/img/OGimg.png" width="500px"></a>
+<a href=""><img src="./img/OGimg.png" width="500px"></a>
 <p>TBD</p>
 
 ## Development
