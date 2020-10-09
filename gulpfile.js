@@ -11,14 +11,14 @@ gulp.task('server', function () {
     browserSync({
         notify: false,
         server: {
-            baseDir: "./public"
+            baseDir: "./"
         }
     });
 
     // 各ファイルを監視
-    return gulp.watch(['./public/*.html', './public/sass/*.scss', './public/js/*.js'], function () {
+    return gulp.watch(['./*.html', './sass/*.scss', './js/*.js'], function () {
       // style.scssファイルを取得
-      return gulp.src('./public/sass/main.scss')
+      return gulp.src('./sass/main.scss')
         // Sassのコンパイルを実行
         .pipe(sass({
           outputStyle: 'expanded'
@@ -26,7 +26,7 @@ gulp.task('server', function () {
         // Sassのコンパイルエラーを表示
         .on('error', sass.logError))
         // cssフォルダー以下に保存
-        .pipe(gulp.dest('./public/css'));
+        .pipe(gulp.dest('./css'));
     }).on("change", reload);
   });
   
