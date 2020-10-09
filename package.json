@@ -1,7 +1,7 @@
 {
-  "name": "hobunsha-map",
+  "name": "my-portfolio",
   "version": "0.9.0",
-  "description": "The MAP for visit the real-life locations of Hobunsha-anime-works",
+  "description": "Hirosaji's illustrations",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hirosaji/hobunsha-map.git"
+    "url": "git+https://github.com/Hirosaji/my-portfolio.git"
   },
   "keywords": [
     "hobunsha",
@@ -20,9 +20,9 @@
   "author": "Hirosaji",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Hirosaji/hobunsha-map/issues"
+    "url": "https://github.com/Hirosaji/my-portfolio/issues"
   },
-  "homepage": "https://github.com/Hirosaji/hobunsha-map#readme",
+  "homepage": "https://github.com/Hirosaji/my-portfolio#readme",
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-sass": "^4.1.0",
