@@ -4,8 +4,8 @@ My portfolio as illustrator work
 
 ## Content Page
 
-<a href=""><img src="./public/img/OGimg.jpg" width="500px"></a>
-<p>TBD</p>
+<a href="https://hirosaji-portfolio.com/"><img src="./public/img/OGimg.jpg" width="500px"></a>
+<p>https://hirosaji-portfolio.com/</p>
 
 ## Development
 
