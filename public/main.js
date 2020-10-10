@@ -16,90 +16,78 @@ function scrollToTop() {
     window.scroll(0, 0);
 }
 
-    const language = {
-        ja: {
-            name: "ひろさじ",
-            illustrator: "illustrator",
-            figcaptions: {
-                1: "",
-                2: ""
-            },
-            work: "Works",
-            info: "Profile",
-            infoText: "新米の社会人イラストレーターです。<br>女の子を主体としたイラストが得意です。絵柄は、リアルもデフォルメも描きます。背景には、実在する静物や舞台をセルルックに描くことが多いです。また、本業がWebエンジニアですので、Webに最適な形式やデザインのイラスト素材を提案することも可能です。",
-            infoContactTouch: "連絡先",
-            infoContactText: "お仕事をご一緒できる機会を、楽しみにしています！"
+const language = {
+    ja: {
+        name: "ひろさじ",
+        illustrator: "illustrator",
+        figcaptions: {
+            1: "",
+            2: ""
         },
-        en: {
-            name: "Hirosaji",
-            illustrator: "illustrator",
-            figcaptions: {
-                1: "",
-                2: ""
-            },
-            work: "Works",
-            info: "Profile",
-            infoText: "I am a newbie illustrator.<br>I specialize in illustrations, mainly of girls. I can draw both realistic and deformed characters. My background illustrations tend to be of real-life still life and stages, and my style can be both rustic and photorealistic. Also, since my day job is a web engineer, I can prepare the best illustration material for the web.",
-            infoContactTouch: "Get in touch",
-            infoContactText: "I’m looking forward to working together!"
-            }
-    };
+        work: "Works",
+        info: "Profile",
+        infoText: "新米の社会人イラストレーターです。<br>女の子を主体としたイラストが得意です。絵柄は、リアルもデフォルメも描きます。背景には、実在する静物や舞台をセルルックに描くことが多いです。また、本業がWebエンジニアですので、Webに最適な形式やデザインのイラスト素材を提案することも可能です。",
+        infoContactTouch: "連絡先",
+        infoContactText: "お仕事をご一緒できる機会を、楽しみにしています！"
+    },
+    en: {
+        name: "Hirosaji",
+        illustrator: "illustrator",
+        figcaptions: {
+            1: "",
+            2: ""
+        },
+        work: "Works",
+        info: "Profile",
+        infoText: "I am a newbie illustrator.<br>I specialize in illustrations, mainly of girls. I can draw both realistic and deformed characters. My background illustrations tend to be of real-life still life and stages, and my style can be both rustic and photorealistic. Also, since my day job is a web engineer, I can prepare the best illustration material for the web.",
+        infoContactTouch: "Get in touch",
+        infoContactText: "I’m looking forward to working together!"
+        }
+};
 
 
-    let translateToJA = () =>  {
-        imgs.forEach((fig) => {
-            let dataNr = fig.dataset.nr;
-            fig.innerHTML = language.ja.figcaptions[dataNr];
-        })
+let translateToJA = () =>  {
+    imgs.forEach((fig) => {
+        let dataNr = fig.dataset.nr;
+        fig.innerHTML = language.ja.figcaptions[dataNr];
+    })
 
-        ids.forEach((el) => {
-            let dataId = el.dataset.id;
-            el.innerHTML = language.ja[dataId];
-        })
-    };
-    let translateToEn  = () =>   {
-        imgs.forEach((fig) => {
-            let dataNr = fig.dataset.nr;
-            fig.innerHTML = language.en.figcaptions[dataNr];
-        })
+    ids.forEach((el) => {
+        let dataId = el.dataset.id;
+        el.innerHTML = language.ja[dataId];
+    })
+};
+let translateToEn  = () =>   {
+    imgs.forEach((fig) => {
+        let dataNr = fig.dataset.nr;
+        fig.innerHTML = language.en.figcaptions[dataNr];
+    })
 
-        ids.forEach((el) => {
-            let dataId = el.dataset.id;
-        
-            el.innerHTML = language.en[dataId];
-        })
-    };
-
-
+    ids.forEach((el) => {
+        let dataId = el.dataset.id;
     
-    
-    ///----------  EVENT LISTENERS  -----------///
-    
-    ja.addEventListener('click', translateToJA);
-    en.addEventListener('click', translateToEn);
-    
+        el.innerHTML = language.en[dataId];
+    })
+};
+
+
+
+
+///----------  EVENT LISTENERS  -----------///
+
+ja.addEventListener('click', translateToJA);
+en.addEventListener('click', translateToEn);
+
 scrollToTopBtns.forEach((btn) => btn.addEventListener('click', scrollToTop));
 
 const addClassOnScroll = window.addEventListener("scroll", () => {
     let windowPosition = window.scrollY;
     let threshold = 100;
-
-    
-      if (windowPosition > workPosition && windowPosition  < infoPosition) {
-          workLink.forEach(el => el.classList.add("active"));
-          infoLink.forEach(el => el.classList.remove("active"));
-    }
-
-    if(windowPosition >= infoPosition - threshold) {
-        workLink.forEach(el => el.classList.remove("active"));
-        infoLink.forEach(el => el.classList.add("active"));
-    }
 }, false)
 
 const showOnScroll = window.addEventListener("scroll",function(){
     var h = window.innerHeight - 20;
     var target = document.querySelectorAll('.showOnScroll');
-
 
     target.forEach((item) => {
         if(window.pageYOffset > h){
@@ -114,14 +102,13 @@ const showOnScroll = window.addEventListener("scroll",function(){
            } else if (window.pageYOffset < h - 25) {
                item.style.display = "none";
            }
-    })
-  }, false);
+        })
+    }, false);
 
 
-///----------  PHOTOSWIPE  -----------///
+    ///----------  PHOTOSWIPE  -----------///
 
-
-  var initPhotoSwipeFromDOM = function(gallerySelector) {
+    var initPhotoSwipeFromDOM = function(gallerySelector) {
 
     var parseThumbnailElements = function(el) {
         var thumbElements = el.childNodes,
