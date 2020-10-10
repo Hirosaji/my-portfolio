@@ -4,15 +4,7 @@
     z-index: 2;
 }
 
-.test {
-    grid-column: 1 / -1;
-    grid-row: 1/2;
-    background-color: #090B34;
-    z-index: 1;
-}
-
 .hero {
-    background-image: linear-gradient(rgba(#1A2669, .2), rgba(#1A2669, .2)) ,url(../img/hero-small.jpg);
     background-size: 100%;
     background-position: 100% 35%;
     height: 105vh;   
@@ -20,7 +12,6 @@
 
     @media only screen and (max-width: 90em) {
         background-size: 100%;
-        background-image: linear-gradient(rgba(#1A2669, .2), rgba(#1A2669, .2)) ,url(../img/hero-small.jpg);
     }
     @media only screen and (max-width: 66.25em) {
         background-size: 106%;
@@ -34,6 +25,22 @@
     }
     @media only screen and (max-aspect-ratio: 4 / 7) {
         background-size: 181%;
+    }
+}
+
+.no-webp .hero {
+    background-image: linear-gradient(rgba(#1A2669, .2), rgba(#1A2669, .2)), url(../img/hero-small.jpg);
+
+    @media only screen and (max-width: 90em) {
+        background-image: linear-gradient(rgba(#1A2669, .2), rgba(#1A2669, .2)), url(../img/hero-small.jpg);
+    }
+}
+
+.webp .hero {
+    background-image: linear-gradient(rgba(#1A2669, .2), rgba(#1A2669, .2)), url(../img/hero-small.webp);
+
+    @media only screen and (max-width: 90em) {
+        background-image: linear-gradient(rgba(#1A2669, .2), rgba(#1A2669, .2)), url(../img/hero-small.webp);
     }
 }
 
