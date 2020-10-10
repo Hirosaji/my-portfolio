@@ -28,7 +28,7 @@ function scrollToTop() {
             info: "Profile",
             infoText: "新米の社会人イラストレーターです。<br>女の子を主体としたイラストが得意です。絵柄は、リアルもデフォルメも描きます。背景には、実在する静物や舞台をセルルックに描くことが多いです。また、本業がWebエンジニアですので、Webに最適な形式やデザインのイラスト素材を提案することも可能です。",
             infoContactTouch: "連絡先",
-            infoContactText: "ご一緒にお仕事する機会を、楽しみにしています！"
+            infoContactText: "お仕事をご一緒できる機会を、楽しみにしています！"
         },
         en: {
             name: "Hirosaji",
