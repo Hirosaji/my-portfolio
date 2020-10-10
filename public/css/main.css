@@ -659,11 +659,6 @@ body {
   align-items: center;
 }
 
-.nav-bar__item--emil {
-  font-family: "Martel Sans", sans-serif;
-  color: #1a2669;
-}
-
 .nav-bar__item--sticky {
   margin-top: 1rem;
   font-size: 2.1rem;
