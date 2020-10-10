@@ -2,20 +2,22 @@
   "name": "my-portfolio",
   "version": "0.9.0",
   "description": "Hirosaji's illustrations",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "gulp server"
+    "server": "gulp server",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Hirosaji/my-portfolio.git"
   },
   "keywords": [
-    "hobunsha",
-    "MAP",
-    "leaflet.js",
-    "D3.js"
+    "illustrator",
+    "Hirosaji",
+    "portfolio",
+    "anime",
+    "manga"
   ],
   "author": "Hirosaji",
   "license": "ISC",
@@ -29,10 +31,12 @@
     "tar": ">=4.4.2"
   },
   "dependencies": {
+    "axios": ">=0.18.1",
     "browser-sync": "^2.26.3",
-    "lodash": ">=4.17.19",
-    "lodash.mergewith": ">=4.6.2",
     "fstream": ">=1.0.12",
-    "axios": ">=0.18.1"
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-connect": "^5.7.0",
+    "lodash": ">=4.17.19",
+    "lodash.mergewith": ">=4.6.2"
   }
 }
