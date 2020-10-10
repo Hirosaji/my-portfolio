@@ -1,5 +1,4 @@
 .footer {
-    background-image: linear-gradient(rgba(#1A2669, .2), rgba(#1A2669, .2)) ,url(../img/hero-2x-min.jpg);
     background-size: 100%;
     background-position: 0 95%;
     height: 100%;   
@@ -12,4 +11,12 @@
         font-size: 1.4rem;
         letter-spacing: 40%;
     }
+}
+
+.no-webp .footer {
+    background-image: linear-gradient(rgba(#1A2669, .2), rgba(#1A2669, .2)), url(../img/hero-2x-min.jpg);
+}
+
+.webp .footer {
+    background-image: linear-gradient(rgba(#1A2669, .2), rgba(#1A2669, .2)), url(../img/hero-2x-min.webp);
 }
