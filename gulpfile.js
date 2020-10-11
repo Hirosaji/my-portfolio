@@ -19,9 +19,7 @@ gulp.task('server', function () {
         }
     });
 
-    gulp.watch('./public/*.js', gulp.task('js-minify'));
-
-    return gulp.watch(['./public/*.html', './public/sass/*.scss'], function () {
+    return gulp.watch(['./public/*.html', './public/sass/*.scss', './public/sass/layout/*.scss'], function () {
       return gulp.src('./public/sass/main.scss')
         .pipe(
             sass({
