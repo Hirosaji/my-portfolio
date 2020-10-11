@@ -259,9 +259,17 @@
     }
     .image_caption__type {
         font-size: 1.8rem;
+
+        @media only screen and (max-width: 600px) {
+            font-size: 1.5rem;
+        }
     }
     .image_caption__title {
         font-size: 2.2rem;
+
+        @media only screen and (max-width: 600px) {
+            font-size: 1.8rem;
+        }
     }
 }
 
