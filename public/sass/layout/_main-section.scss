@@ -19,7 +19,6 @@
     }
 }
 
-
 .work {
     position: relative;
     grid-column: 2 / 3;
@@ -200,3 +199,41 @@
     
     }
 }
+
+.btn {
+    position: relative;
+    display: inline-block;
+    width: 48.5%;
+    height: 46px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    transition: all .3s;
+    margin: 6px 0;
+
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    line-height: 48px;
+
+    &::before,
+    &::after {
+        position: absolute;
+        z-index: -1;
+        display: block;
+        content: '';
+    }
+
+    background-color: #333;
+
+    &:hover {
+        background-color: #ca676d;
+    }
+}
+
+.btn-wrap-pc-sp {
+  display: flex;
+  margin: 0 auto 20px;
+  justify-content: space-between;
+}
+
+
