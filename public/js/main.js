@@ -97,6 +97,16 @@ scrollToTopBtns.forEach((btn) => btn.addEventListener('click', scrollToTop));
 const addClassOnScroll = window.addEventListener("scroll", () => {
     let windowPosition = window.scrollY;
     let threshold = 100;
+    
+    if (windowPosition > workPosition && windowPosition  < infoPosition) {
+        workLink.forEach(el => el.classList.add("active"));
+        infoLink.forEach(el => el.classList.remove("active"));
+    }
+
+    if(windowPosition >= infoPosition - threshold) {
+        workLink.forEach(el => el.classList.remove("active"));
+        infoLink.forEach(el => el.classList.add("active"));
+    }
 }, false)
 
 const showOnScroll = window.addEventListener("scroll",function(){
