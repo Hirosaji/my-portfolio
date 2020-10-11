@@ -3,7 +3,8 @@ const workPosition = document.querySelector("#work").offsetTop;
 const infoLink = document.querySelectorAll(".info-link");
 const workLink = document.querySelectorAll(".work-link");
 
-const forms = document.querySelectorAll(".form-element");
+const jaEls = document.querySelectorAll(".only-ja");
+const enEls = document.querySelectorAll(".only-en");
 
 const ids = document.querySelectorAll("[data-id]");
 const imgs = document.querySelectorAll("[data-nr]");
@@ -63,8 +64,12 @@ let translateToJA = () =>  {
         el.innerHTML = language.ja[dataId];
     })
 
-    forms.forEach((el) => {
+    jaEls.forEach((el) => {
         el.style.display='block';
+    })
+
+    enEls.forEach((el) => {
+        el.style.display='none';
     })
 };
 let translateToEn  = () =>   {
@@ -79,8 +84,12 @@ let translateToEn  = () =>   {
         el.innerHTML = language.en[dataId];
     })
 
-    forms.forEach((el) => {
+    jaEls.forEach((el) => {
         el.style.display='none';
+    })
+
+    enEls.forEach((el) => {
+        el.style.display='block';
     })
 };
 
