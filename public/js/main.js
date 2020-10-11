@@ -3,6 +3,8 @@ const workPosition = document.querySelector("#work").offsetTop;
 const infoLink = document.querySelectorAll(".info-link");
 const workLink = document.querySelectorAll(".work-link");
 
+const forms = document.querySelectorAll(".form-element");
+
 const ids = document.querySelectorAll("[data-id]");
 const imgs = document.querySelectorAll("[data-nr]");
 
@@ -27,8 +29,10 @@ const language = {
         work: "Works",
         info: "Profile",
         infoText: "新米の社会人イラストレーターです。<br>女の子を主体としたイラストが得意です。絵柄は、リアルもデフォルメも描きます。背景には、実在する静物や舞台をセルルックに描くことが多いです。また、本業がWebエンジニアですので、Webに最適な形式やデザインのイラスト素材を提案することも可能です。",
+        infoFormTouch: "お問い合わせ・ご依頼フォーム",
+        infoFormText: "イラスト制作などのお問い合わせやご依頼は、次の専用フォームにて承っております。",
         infoContactTouch: "連絡先",
-        infoContactText: "お仕事をご一緒できる機会を、楽しみにしています！"
+        infoContactText: "専用フォーム以外でも、ご連絡を受け付けております。お気軽にご相談ください！"
     },
     en: {
         name: "Hirosaji",
@@ -40,9 +44,11 @@ const language = {
         work: "Works",
         info: "Profile",
         infoText: "I am a newbie illustrator.<br>I specialize in illustrations, mainly of girls. I can draw both realistic and deformed characters. My background illustrations tend to be of real-life still life and stages, and my style can be both rustic and photorealistic. Also, since my day job is a web engineer, I can prepare the best illustration material for the web.",
+        infoFormTouch: "Inquiry / request form (in Japanese)",
+        infoFormText: "If you can read Japanese, and have any questions or requests, please contact us using the following the form.",
         infoContactTouch: "Get in touch",
         infoContactText: "I’m looking forward to working together!"
-        }
+    }
 };
 
 
@@ -56,6 +62,10 @@ let translateToJA = () =>  {
         let dataId = el.dataset.id;
         el.innerHTML = language.ja[dataId];
     })
+
+    forms.forEach((el) => {
+        el.style.display='block';
+    })
 };
 let translateToEn  = () =>   {
     imgs.forEach((fig) => {
@@ -67,6 +77,10 @@ let translateToEn  = () =>   {
         let dataId = el.dataset.id;
     
         el.innerHTML = language.en[dataId];
+    })
+
+    forms.forEach((el) => {
+        el.style.display='none';
     })
 };
 
