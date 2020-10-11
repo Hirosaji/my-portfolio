@@ -32,7 +32,7 @@ const language = {
         infoFormTouch: "お問い合わせ・ご依頼フォーム",
         infoFormText: "イラスト制作などのお問い合わせ・ご依頼は、次の専用フォームにて承っております。",
         infoContactTouch: "連絡先",
-        infoContactText: "ご連絡は専用フォーム以外でも受け付けています。お気軽にご相談ください！"
+        infoContactText: "専用フォーム以外でも、お仕事のご連絡は受け付けています。お気軽にご相談ください！"
     },
     en: {
         name: "Hirosaji",
