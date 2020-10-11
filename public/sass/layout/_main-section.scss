@@ -91,7 +91,7 @@
     grid-column: 2 /3;
 
     display: grid;
-    grid-template-rows: .8fr 2fr .33fr .66fr .33fr 8rem;
+    grid-template-rows: .8fr 2fr .33fr .66fr 1.0fr 8rem;
     grid-template-columns:  1fr 5fr 1fr 5fr 1fr;
     grid-gap: .5rem;
 
