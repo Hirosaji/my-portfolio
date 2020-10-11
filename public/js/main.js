@@ -139,9 +139,9 @@ const showOnScroll = window.addEventListener("scroll",function(){
     }, false);
 
 
-    ///----------  PHOTOSWIPE  -----------///
+///----------  PHOTOSWIPE  -----------///
 
-    var initPhotoSwipeFromDOM = function(gallerySelector) {
+var initPhotoSwipeFromDOM = function(gallerySelector) {
 
     var parseThumbnailElements = function(el) {
         var thumbElements = el.childNodes,
@@ -155,6 +155,7 @@ const showOnScroll = window.addEventListener("scroll",function(){
         for(var i = 0; i < numNodes; i++) {
 
             figureEl = thumbElements[i]; // <figure> element
+            
             if(figureEl.nodeType !== 1) {
                 continue;
             }
@@ -169,8 +170,6 @@ const showOnScroll = window.addEventListener("scroll",function(){
                 w: parseInt(size[0], 10),
                 h: parseInt(size[1], 10)
             };
-
-
 
             if(figureEl.children.length > 1) {
                 // <figcaption> content
