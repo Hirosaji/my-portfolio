@@ -1,4 +1,4 @@
-## Image Optimaze
+## Image Optimize
 
 ### Run
 
