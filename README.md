@@ -42,4 +42,4 @@ convert image.jpg -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -col
 ## License
 ISC license
 
-Copyright (c) 2020 Hirosaji
+Copyright (c) 2020-2021 Hirosaji
