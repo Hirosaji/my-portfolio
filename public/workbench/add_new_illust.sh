@@ -13,15 +13,15 @@ convert $1 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace
 convert $1 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB il-xx-thumbnail-min.jpg
 
 # resize
-mogrify -resize 400x il-xx-1x-min.jpg
+mogrify -resize 400x il-xx-thumbnail-min.jpg
 
 v=$(identify -format "%w,%h" $1)
 list=(${v//,/ })
 
 if [ ${list[0]} -ge ${list[1]} ]; then
-	mogrify -resize x1500 il-xx-thumbnail-min.jpg
+	mogrify -resize x1500 il-xx-1x-min.jpg
 else
-	mogrify -resize 1500x il-xx-thumbnail-min.jpg
+	mogrify -resize 1500x il-xx-1x-min.jpg
 fi
 
 exit 0
