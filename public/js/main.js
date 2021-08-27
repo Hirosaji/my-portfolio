@@ -47,7 +47,7 @@ const language = {
         infoText: "I am a newbie illustrator.<br>I specialize in illustrations, mainly of girls. I can draw both realistic and deformed characters. My background illustrations tend to be of real-life still life and stages, and my style can be both rustic and photorealistic. Also, since my day job is a web engineer, I can prepare the best illustration material for the web.",
         infoFormTouch: "Inquiry / request form (in Japanese)",
         infoFormText: "If you can read Japanese, and have any questions or requests, please contact us using the following the form.",
-        infoContactTouch: "Get in touch",
+        infoContactTouch: "Get in touch (ENG OK)",
         infoContactText: "I’m looking forward to working together!"
     }
 };
